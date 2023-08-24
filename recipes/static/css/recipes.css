@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	padding: 16px;
+}
+
+footer {
+	padding: 24px 0;
+	background-color: #b4cf66;
+	margin-top: 32px;
+	padding: 32px;
+}
+
+img {
+	height: 200px;
+}
+
+nav {
+	background-color: #ff5a33;
+	border-bottom: 1px solid #146152;
+	padding: 16px;
+}
+
+nav a {
+	color: white;
+	font-weight: bold;
+}
+
+h1 {
+	color: #146152;
+}
+
+a {
+	color: #44803f;
+	text-decoration: none;
+}
+
+.recipe-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.ingredients-table tr:nth-child(even) {
+	background-color: rgba(0, 0, 0, 0.1);
+}
