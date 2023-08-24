@@ -1,0 +1,23 @@
+<!-- prettier-ignore -->
+{% extends 'base.html' %}
+
+{% block title %}
+	{{ recipe_object.title }} - Scrumptious Recipes
+{% endblock title %}
+
+{% block content %}
+<main>
+	<div class="recipe-grid">
+		{% for recipe in recipe_list %}
+		<div>
+			<h3>
+				<a href="detail.html">{{ recipe.title }}</a>
+			</h3>
+			<img src="{{ recipe.picture }}" />
+			<p>{{ recipe.description }}</p>
+			<div>4.3 stars</div>
+		</div>
+		{% endfor %}
+	</div>
+</main>
+{% endblock content %}
