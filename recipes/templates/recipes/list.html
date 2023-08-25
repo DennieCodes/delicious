@@ -11,8 +11,9 @@
 		{% for recipe in recipe_list %}
 		<div>
 			<h3>
-				<a href="detail.html">{{ recipe.title }}</a>
+				<a href="{% url 'show_recipe' recipe.id %}">{{ recipe.title }}</a>
 			</h3>
+			<p>Created on: {{ recipe.created_on|date:'F j, Y' }}</p>
 			<img src="{{ recipe.picture }}" />
 			<p>{{ recipe.description }}</p>
 			<div>4.3 stars</div>

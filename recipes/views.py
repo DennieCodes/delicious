@@ -19,6 +19,7 @@ def recipe_list(request):
 def create_recipe(request):
     if request.method == "POST":
         form = RecipeForm(request.POST)
+
         if form.is_valid():
             form.save()
             return redirect("recipes/list.jtml")
