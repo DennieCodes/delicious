@@ -8,9 +8,7 @@
 {% block content %}
 <main>
 	<form method="post">
-		<!-- prettier-ignore -->
-		{% csrf_token %}
-    {{ form.as_p }}
+		{% csrf_token %} {{ form.as_p }}
 		<button>Create</button>
 	</form>
 </main>
